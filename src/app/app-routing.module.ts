@@ -8,7 +8,12 @@ import { AboutComponent } from './components/about/about.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'about', component: AboutComponent }
+  { path: 'about', component: AboutComponent },
+  // {
+  //   path: 'login',
+  //   component: LoginComponent,
+  //   outlet: 'modal'
+  // }
 ];
 
 @NgModule({

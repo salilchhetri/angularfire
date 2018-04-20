@@ -14,6 +14,8 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { FormsModule } from '@angular/forms';
 
 import { AuthService } from './services/auth.service';
+import { ModalComponent } from './components/modal/modal.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -22,14 +24,16 @@ import { AuthService } from './services/auth.service';
     NavbarComponent,
     HomeComponent,
     LoginComponent,
-    AboutComponent
+    AboutComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
